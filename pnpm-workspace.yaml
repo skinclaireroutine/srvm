@@ -1,0 +1,5 @@
+packages:
+  - "packages/*"
+  - "examples/*"
+allowBuilds:
+  sqlite3: true

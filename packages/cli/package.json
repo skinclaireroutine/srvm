@@ -1,0 +1,26 @@
+{
+  "name": "@srvm/cli",
+  "version": "1.0.0",
+  "description": "Command line for the srvm script runner",
+  "type": "module",
+  "bin": {
+    "srvm": "./dist/bin.js"
+  },
+  "main": "./dist/bin.js",
+  "types": "./dist/bin.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/bin.d.ts",
+      "import": "./dist/bin.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@srvm/core": "workspace:*"
+  }
+}
