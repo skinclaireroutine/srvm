@@ -1,0 +1,19 @@
+{
+  "name": "postgres-example",
+  "version": "1.0.0",
+  "description": "srvm example backed by PostgreSQL",
+  "main": "srvm.config.js",
+  "scripts": {
+    "prestart": "pnpm --filter @srvm/cli... --filter @srvm/store-postgres... build",
+    "start": "pnpm exec srvm up --config-script ./srvm.config.js"
+  },
+  "dependencies": {
+    "@srvm/core": "workspace:*",
+    "@srvm/store-postgres": "workspace:*",
+    "pg": "^8.16.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
